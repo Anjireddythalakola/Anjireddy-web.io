@@ -1,0 +1,88 @@
+//---------color-styles--------
+$primary:#03a9f4;
+
+body{
+    background-color: #F5F5F5;
+}
+.jumbotron{
+    background:#fff;
+     border-bottom: 3px solid $primary;
+}
+
+// ----- icons effects-----
+.employee-profile{
+    width: 75px;
+    height: 75px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    background: $primary;
+    border-radius: 50%;
+    color: #fff;
+    cursor: pointer;
+    &:hover{
+        box-shadow: 1px 1px 13px 3px #90CAF9;
+        transition: 0.4s;
+    }
+}
+
+// --employee-card------
+
+.empolyee-card{
+border-radius:0px;
+border:none;
+border-right:2px solid $primary;
+border-left:2px solid $primary;
+}
+
+// ------from input styles--------
+
+
+.form-group{
+margin-bottom:25px;
+}
+.form-control{
+    border:none;
+    border-radius:0px;
+    border-bottom:1px solid #ced4da;
+    &:focus{
+    box-shadow:none;
+    }
+}
+  
+  .form-control-placeholder {
+    position: absolute;
+    top:4px;
+    padding: 7px 0 0 0px;
+    transition: all 200ms;
+    opacity: 0.5;
+  }
+  
+  .form-control:focus + .form-control-placeholder,
+  .form-control:valid + .form-control-placeholder {
+    font-size: 12px;
+    transform: translate3d(0, -80%, 0);
+    opacity: 1;
+  }
+//-------- button-style--------
+.btn{
+    border-radius:0px;
+}
+.btn-outline-primary{
+    color: $primary;
+    border-color: $primary;
+    box-shadow:none;
+    &:hover{
+        color: #fff;
+    background-color:  $primary;
+    border-color:  $primary;
+    }
+    &:focus{
+        box-shadow:none;
+    }
+    &:active{
+        color: #fff;
+    background-color:  $primary;
+    border-color:  $primary;
+    }
+}
